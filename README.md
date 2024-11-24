@@ -1,18 +1,38 @@
 
 # 🌟 Admin Dashboard Assignment 🌟
 
-Welcome to the **Admin Dashboard Assignment**! This project will guide you in creating a functional and user-friendly admin dashboard for a social media platform using **Next.js** and API integration.
+Welcome to the **Admin Dashboard Assignment**! 
+A responsive admin dashboard for managing users, monitoring content, and analyzing platform activities. This dashboard allows administrators to track user engagement, moderate content, and gain insights into platform performance through interactive analytics.
+The Layout is friendly for Mobile UI as well. The dimensions for the mobile UI specifically being 320 X 586 pixels.
 
 ---
 
-## 📝 Project Overview
-
-You’ll be building a responsive admin dashboard for a social media application. The dashboard will include essential features such as **user management**, **content moderation**, and **analytics** to give admins control over user data and platform activities.
-
-🔗 **Admin Dashboard API**: `https://api.socialverseapp.com/admin/dashboard`
+## 📝 Table of Content
+ 1. Set up instructions
+ 2. Project Overview
+ 3. Key Features
+ 4. Tech Stack
+ 5. Project structure
 
 ---
+## 🛠️ Set up instruction
 
+ 1. Create next js app: npx create-next-app@latest my-nextjs-app
+ 2. Move into folder of your next js: cd my-nextjs-app
+ 3. Run the code: npm run dev
+ 4. Click on the link shown in the terminal : http://localhost:3000
+ 5. When the link starts in the server add /dashboard next to it to access: http://localhost:3000/dashboard
+ 6. You can move around different features with the help of the navbar present
+
+---## 📝 Project Overview
+
+This project is a modern admin dashboard built using Next.js that allows social media administrators to:
+ 1. Manage users by tracking their activities, referrals, and engagement.
+ 2. Moderate content by monitoring daily interactions such as views, shares, and comments.
+ 3. Visualize analytics with responsive charts to track user activity and content performance.
+ 4. The dashboard integrates with the Socialverse Admin Dashboard API to fetch and display user and post data.
+
+---
 ## 🌟 Key Features
 
 1. 👤 User Management: Easily view & track activity, referrals, and identify active users or creators.
@@ -23,71 +43,49 @@ You’ll be building a responsive admin dashboard for a social media application
 
 5. 📈 Data Visualization: Responsive charts (Chart.js/Recharts) provide insights into user engagement and content performance.
 
+6. 🌟 Responsive Design: Fully responsive UI, ensuring usability on both desktop and mobile devices.
+
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: Next.js
-- **Styling**: Tailwind CSS or Styled Components
-- **Analytics Visualization**: Chart.js or Recharts
-- **Data Fetching**: SWR or React Query for API requests
+- **Styling**: Tailwind CSS 
+- **Analytics Visualization**: Chart.js and Recharts
+- **Data Fetching**: SWR for API requests
 
 ---
 
-## ✅ Requirements
+## ✅ Structure
 
-1. **📱 Responsive Design**: Ensure that the dashboard is mobile-friendly.
-2. **🌐 API Integration**: Use the provided API to fetch and display user and post data.
-3. **📄 Documentation**: Write clean, well-documented code, and include a detailed **README** with setup instructions and an overview of the project structure.
 
----
-
-## 🚀 Getting Started
-
-1. **Clone or Fork the repository** and install the necessary dependencies:
-   ```bash
-   git clone https://github.com/Tim-Alpha/web-assignment.git
-   ```
-   ```bash
-   cd web-assignment
-   ```
-   ```bash
-   npm install
-   ```
-2. **Set up environment variables** by creating an `.env.local` file.
-3. **Run the project**:
-   ```bash
-   npm run dev
-   ```
-
----
-
-## 📩 Submission Process
-
-1. **GitHub Repository**:
-   - Push your code to a GitHub repository with appropriate permissions.
-   - Ensure that the repository has **read permissions** for review.
-
-2. **🎥 Video Explanation**:
-   - Record a video walk through of your project, including:
-     - A demo of the UI and key features
-     - An explanation of your code structure and logic
-     - A brief introduction of yourself and the project
-   - **Tip**: Make it engaging and informative!
-   - Share the video link via a platform like Google Drive or Internshala.
-   - Your face must be visible in the entire video explanation.
-
-3. **Submit the Following**:
-   - **GitHub Link**: Your repository link
-   - **Video Link**: Your video walk through link
-
----
-
-## 🏆 Evaluation Criteria
-
-1. **✨ UI/UX**: Aesthetics, ease of use, and responsiveness
-2. **🧑‍💻 Code Quality**: Readable, well-structured, and documented code
-3. **🌐 API Integration**: Proper use of the provided API
-4. **📅 Completion**: Submission of both the GitHub and video links, with all features implemented
-
-Good luck, and happy coding! 🚀"#Social-media-dashboard" 
+PROJECT STRUCTURE:
+Dashboard/
+│
+├── .next/                   
+├── app/                       # Main application directory (Next.js App Router)
+│   ├── analytics/             # Folder for analytics feature
+│   ├── components/            # Reusable React components
+│   ├── content/               # Folder for content moderation feature
+│   ├── dashboard/             # Folder for Dashboard
+│   ├── insights/              # Folder for Data visualization feature
+│   ├── users/                 # Folder for User Management feature
+│   ├── favicon.ico            # Favicon for the website
+│   ├── globals.css            # Global CSS file for overall styling
+│   ├── layout.js              # Root layout for the app, wraps all pages
+│   ├── page.js                # Main page entry point (usually the home page)
+│            
+│
+├── node_modules/              # Installed npm/yarn dependencies
+│
+├── public/                    # Static assets like images, fonts, etc.
+│
+├── .eslintc.json              # ESLint configuration file
+├── .gitignore                 # Git ignore file specifying files/folders to exclude
+├── jsconfig.json              # JavaScript project configuration for module resolution
+├── next.config.js             # Next.js configuration file
+├── package-lock.json          # Lock file for package dependencies (npm)
+├── package.json               # Lists project dependencies and scripts
+├── postcss.config.js          # Configuration for PostCSS (used with Tailwind CSS)
+├── README.md                  # Documentation for the project
+└── tailwind.config.js         # Tailwind CSS configuration file
