@@ -24,7 +24,8 @@ The Layout is friendly for Mobile UI as well. The dimensions for the mobile UI s
  5. When the link starts in the server add /dashboard next to it to access: http://localhost:3000/dashboard
  6. You can move around different features with the help of the navbar present
 
----## 📝 Project Overview
+---
+## 📝 Project Overview
 
 This project is a modern admin dashboard built using Next.js that allows social media administrators to:
  1. Manage users by tracking their activities, referrals, and engagement.
