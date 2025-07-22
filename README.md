@@ -1,7 +1,7 @@
 
-# 🌟 Admin Dashboard Assignment 🌟
+# 🌟 Admin Dashboard 🌟
 
-Welcome to the **Admin Dashboard Assignment**! 
+Welcome to the **Admin Dashboard **! 
 A responsive admin dashboard for managing users, monitoring content, and analyzing platform activities. This dashboard allows administrators to track user engagement, moderate content, and gain insights into platform performance through interactive analytics.
 The Layout is friendly for Mobile UI as well. The dimensions for the mobile UI specifically being 320 X 586 pixels.
 
